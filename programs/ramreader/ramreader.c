@@ -39,11 +39,11 @@ static Fifo
 
 #include <fifoPrint.h>
 
-bool fifoPrintCharEscaped(Fifo *fifo, char c) {
-	if (0x20<=c && c<=127
-	|| c=='\n' || c=='\r') return fifoPrintChar(fifo,c);
-	else return fifoPrintString(fifo,"\\x") && fifoPrintHex(fifo,(int)c & 0xFF,2,2);
-}
+//bool fifoPrintCharEscaped(Fifo *fifo, char c) {
+//	if (0x20<=c && c<=127
+//	|| c=='\n' || c=='\r') return fifoPrintChar(fifo,c);
+//	else return fifoPrintString(fifo,"\\x") && fifoPrintHex(fifo,(int)c & 0xFF,2,2);
+//}
 
 void doIo(void) {
 	// uC -> prog

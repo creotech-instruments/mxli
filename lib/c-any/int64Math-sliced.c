@@ -118,16 +118,16 @@ Uint64 uint64MulFast_en (int e, Uint64 a, Uint64 b) {
 
 
 //SLICE
-Uint32 uint32SqrtFloor(Uint32 x) {
-	if (x<=0) return x;	// catches x=0, too
+//Uint32 uint32SqrtFloor(Uint32 x) {
+//	if (x<=0) return x;	// catches x=0, too
 
-	Uint32 r = 1, rr = 0;
-	while (r!=rr) {
-		rr = r;
-		r = (r + uint64Div(x,r) + 1) >> 1;	
-	}
-	return r*r<=x && r!=0 ? r : r-1;
-}
+//	Uint32 r = 1, rr = 0;
+//	while (r!=rr) {
+//		rr = r;
+//		r = (r + uint64Div(x,r) + 1) >> 1;
+//	}
+//	return r*r<=x && r!=0 ? r : r-1;
+//}
 
 //SLICE
 Uint32 uint32SqrtCeil(Uint32 x) {

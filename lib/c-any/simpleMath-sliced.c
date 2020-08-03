@@ -2,12 +2,12 @@
 #include <simpleMath.h>
 
 //SLICE
-Uint32 uint32Power(Uint32 x, Uint32 y) {
-	Uint32 p = 1;
-	for (int i=0; i<y; ++i, p*=x);
+//Uint32 uint32Power(Uint32 x, Uint32 y) {
+//	Uint32 p = 1;
+//	for (int i=0; i<y; ++i, p*=x);
 
-	return p;
-}
+//	return p;
+//}
 
 //SLICE
 int boundedSigned(int value, int bitMask) {
