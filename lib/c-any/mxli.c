@@ -1,5 +1,7 @@
 #include <mxli.h>
 
+enum LpcIspDebugLevel_t LpcIspDebugLevel;
+
 // This should not exist...
 struct Patch patch = { 0 };			///< state variable required to patch broken ISP CR LF sequences.
 

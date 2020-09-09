@@ -13,13 +13,14 @@
 #include <executable32.h>
 #include <int32PairList.h>
 
-enum {
+enum LpcIspDebugLevel_t {
 	LPC_ISP_SILENT =-1,		///< don't show errors.
 	LPC_ISP_NORMAL,			///< show errors and explicit output.
 	LPC_ISP_PROGRESS,		///< show progress bars.
 	LPC_ISP_INFO,			///< some more implementation details
 	LPC_ISP_DEBUG,			///< most detailed output: dump.
-} LpcIspDebugLevel;
+};
+extern enum LpcIspDebugLevel_t LpcIspDebugLevel;
 
 /** Communication channel to/from LPC: fifo based + push/pull functions. The Fifos will be used across multiple
  * function calls. Two principles are used in mxli: 1) Most responses are text line responses and these can be read
