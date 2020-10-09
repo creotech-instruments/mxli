@@ -66,6 +66,9 @@ int serialOpenBlockingTimeout(const char *tty, int baud, int timeoutDeciSeconds)
 			)
 			;
 		terminalSettings.c_cflag = terminalSettings.c_cflag
+			& ~	( CSTOPB
+				| PARENB
+				| PARODD)
 			| CLOCAL		// ignore modem control lines
 			| CREAD			// enable reading chars
 			;
