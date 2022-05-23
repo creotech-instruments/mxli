@@ -213,11 +213,11 @@ LpcIspIo lpcIspIo = {
 static WaveSet waveSet = {
 	.waves = {
 		{	.commands = {	// enter ISP: /RST with /BOOT=0
-				WAVE_CMD_D0, WAVE_CMD_R0, WAVE_CMD_PAUSE_SHORT, WAVE_CMD_D1, WAVE_CMD_PAUSE_LONG,
-				WAVE_CMD_R1, WAVE_CMD_END,
+				WAVE_CMD_R0, WAVE_CMD_D1, WAVE_CMD_PAUSE_LONG, WAVE_CMD_D0, WAVE_CMD_PAUSE_LONG,
+				WAVE_CMD_R0, WAVE_CMD_END,
 			}
 		},{	.commands = {	// execute: /RST (DTR) with /BOOT=1 (RTS)
-				WAVE_CMD_D0, WAVE_CMD_R1, WAVE_CMD_PAUSE_SHORT, WAVE_CMD_D1, WAVE_CMD_PAUSE_LONG,
+				WAVE_CMD_D0, WAVE_CMD_R1, WAVE_CMD_PAUSE_LONG, WAVE_CMD_D1, WAVE_CMD_PAUSE_LONG,
 				WAVE_CMD_R1, WAVE_CMD_END,
 			}
 		},{	.commands = { 	// jump: do nothing, except not assert /RST or /BOOT
