@@ -16,6 +16,8 @@ bool lpcCommand(const LpcIspIo *io, char command, const Uint32 *params, int nPar
 
 bool (*lpcIspFlowControlHook)(const LpcIspIo *io, char code) = 0;
 
+enum LpcIspDebugLevel;
+
 // some convenience functions
 //
 
