@@ -13,7 +13,7 @@
 #include <executable32.h>
 #include <int32PairList.h>
 
-enum {
+extern enum {
 	LPC_ISP_SILENT =-1,		///< don't show errors.
 	LPC_ISP_NORMAL,			///< show errors and explicit output.
 	LPC_ISP_PROGRESS,		///< show progress bars.

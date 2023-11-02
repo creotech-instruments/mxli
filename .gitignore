@@ -1,0 +1,8 @@
+lib/c-any/*.o
+lib/c-any/_slice*.c
+lib/c-linux/*.o
+lib/libc-any.a
+lib/libc-linux.a
+lib/doc/html/
+programs/mxli3/mxli.o
+programs/mxli3/mxli
